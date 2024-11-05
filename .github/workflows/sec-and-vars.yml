@@ -4,6 +4,7 @@ on: [workflow_dispatch]
 
 jobs:
   build:
+    environment: test
     runs-on: ubuntu-latest
     steps: 
       - name: Checkout
@@ -14,3 +15,9 @@ jobs:
 
       - name: Show repo secret
         run: echo ${{ vars.MY_REPO_SECRET }}
+
+      - name: Show env variable
+        run: echo ${{ vars.MY_ENV_VAR }}
+
+      - name: Show env secret
+        run: echo ${{ vars.MY_ENV_SECRET }}
