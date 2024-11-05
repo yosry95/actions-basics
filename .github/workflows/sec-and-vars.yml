@@ -13,4 +13,4 @@ jobs:
         run: echo ${{ vars.MY_REPO_VAR }}
 
       - name: Show repo secret
-        run: echo ${{ var.MY_REPO_SECRET }}
+        run: echo ${{ vars.MY_REPO_SECRET }}
